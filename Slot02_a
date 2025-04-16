@@ -1,0 +1,40 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package slot02_a;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ *
+ * @author truon
+ */
+public class Slot02_a {   
+    public static void main(String[] args) {      
+       List<Integer> list1 = new ArrayList<Integer>();
+       
+      list1.add(5);
+      list1.add(10);
+        for (int i = 0; i < 10; i++) {
+            list1.add(i);
+        }
+        for (int i = 0; i < 10; i++) {
+            System.out.println(list1.get(i));
+        }
+        
+//        list1.clear();
+//        list1.removeAll(list1);       
+//        list1.remove(0);//remove frist
+//        list1.remove(list1.size()-1);//remove last
+//        list1.add(0, -1);
+//        list1.add(list1.size()-1, -100);
+        
+//        list1.indexOf(5); //lay ra vi tri
+        list1.get(list1.indexOf(5));//in ra so 5
+//        list1.replaceAll(n -> n ==5?10 : n);
+        System.out.println("so luong la :"+ list1.size());
+    }
+}
